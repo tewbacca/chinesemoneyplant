@@ -2,7 +2,7 @@
 
 A lightweight static site for Pilea Studio, an independent app development studio in Torquay, Victoria.
 
-The vector brand mark is stored in `logo-mark.svg`, with the browser icon in `favicon.svg`.
+The cropped brand mark is stored in `logo-mark.png`, with the dark inverse browser icon in `favicon.png`.
 
 ## Local preview
 
