@@ -22,8 +22,11 @@ a { color: inherit; }
 
 .site-header { position: fixed; z-index: 20; top: 0; left: 0; width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem clamp(1.25rem, 5vw, 5rem); transition: background .3s, box-shadow .3s, padding .3s; }
 .site-header.scrolled { padding-top: .75rem; padding-bottom: .75rem; background: rgba(245, 250, 246, .92); box-shadow: 0 1px 0 var(--line); backdrop-filter: blur(14px); }
-.brand { display: inline-flex; align-items: center; gap: .7rem; color: var(--ink); font: 700 1.05rem var(--display); text-decoration: none; letter-spacing: -.02em; }
-.brand-mark { width: 39px; height: 39px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.55; }
+.brand { display: inline-flex; align-items: center; gap: .75rem; color: var(--ink); text-decoration: none; }
+.brand-mark { width: 46px; height: 46px; }
+.brand-copy { display: flex; flex-direction: column; align-items: center; line-height: 1; }
+.brand-name { font: 600 .98rem var(--display); letter-spacing: .2em; text-transform: uppercase; }
+.brand-tagline { margin-top: .38rem; font: 500 .46rem var(--body); letter-spacing: .32em; text-transform: uppercase; }
 .site-nav { display: flex; align-items: center; gap: 2rem; font-size: .9rem; font-weight: 600; }
 .site-nav a { text-decoration: none; }
 .site-nav a:not(.nav-cta) { position: relative; }
@@ -153,6 +156,9 @@ footer p { margin: 0; color: #62786f; font-size: .82rem; line-height: 1.5; }
 @media (max-width: 640px) {
   body { font-size: 16px; }
   .site-header { padding: 1rem 1.25rem; }
+  .brand-mark { width: 42px; height: 42px; }
+  .brand-name { font-size: .84rem; letter-spacing: .15em; }
+  .brand-tagline { font-size: .4rem; }
   .menu-toggle { position: relative; z-index: 22; display: block; width: 42px; height: 42px; padding: 0; border: 0; border-radius: 50%; background: var(--white); }
   .menu-toggle > span:not(.sr-only) { position: absolute; left: 12px; width: 18px; height: 1px; background: var(--ink); transition: transform .2s, top .2s; }
   .menu-toggle > span:nth-child(2) { top: 17px; }
