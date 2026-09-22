@@ -89,21 +89,12 @@ h1, h2, h3 { font-family: var(--display); }
 .project-card h3 a span { font-size: 1.2rem; transition: transform .25s; }
 .project-card h3 a:hover span { transform: translate(3px, -3px); }
 .project-card > p { position: absolute; z-index: 2; right: 2rem; bottom: 1.7rem; left: 2rem; margin: 0; color: #5b766a; font-size: .88rem; line-height: 1.5; }
-.project-orbit, .project-radar, .project-wave { position: absolute; top: 5.3rem; right: 1.5rem; left: 1.5rem; height: 205px; }
-.project-orbit { border: 1px solid rgba(53, 125, 82, .22); border-radius: 50%; transform: rotate(-8deg); }
-.project-orbit::before, .project-orbit::after { content: ""; position: absolute; border: 1px solid rgba(53, 125, 82, .2); border-radius: 50%; }
-.project-orbit::before { inset: 28px 5px; transform: rotate(23deg); }
-.project-orbit::after { inset: 5px 66px; transform: rotate(-30deg); }
-.project-orbit span { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: var(--green); }
-.project-orbit span:first-child { top: 12%; left: 47%; }
-.project-orbit span:nth-child(2) { right: 7%; bottom: 27%; }
-.project-orbit span:last-child { bottom: 5%; left: 25%; }
-.project-radar { right: 4rem; left: 4rem; height: 210px; border: 1px solid rgba(53, 125, 82, .24); border-radius: 50%; background: repeating-radial-gradient(circle, transparent 0 31px, rgba(53, 125, 82, .13) 32px 33px); }
-.project-radar::before { content: ""; position: absolute; top: 50%; left: 50%; width: 48%; height: 1px; background: rgba(53, 125, 82, .35); transform: rotate(-36deg); transform-origin: left; }
-.project-radar::after { content: ""; position: absolute; top: 49%; left: 49%; width: 9px; height: 9px; border-radius: 50%; background: var(--leaf); }
-.project-radar span { position: absolute; width: 5px; height: 5px; border-radius: 50%; background: var(--green); }
-.project-radar span:first-child { top: 25%; right: 23%; }
-.project-radar span:last-child { bottom: 22%; left: 31%; }
+.project-media, .project-wave { position: absolute; top: 5.3rem; right: 1.5rem; left: 1.5rem; height: 205px; }
+.project-media { display: grid; place-items: center; overflow: hidden; }
+.project-media img { display: block; max-width: 100%; }
+.project-app-icon img { width: 180px; height: 180px; border-radius: 24%; filter: drop-shadow(0 15px 20px rgba(7, 60, 42, .13)); }
+.project-graph { border: 1px solid rgba(7, 60, 42, .2); border-radius: 10px; background: #0e151d; box-shadow: 0 14px 28px rgba(7, 27, 38, .13); }
+.project-graph img { width: 100%; height: 100%; object-fit: cover; }
 .project-wave { top: 6rem; display: grid; align-content: center; gap: 18px; }
 .project-wave::before { content: ""; position: absolute; top: 18px; left: 50%; width: 120px; height: 120px; border: 1px solid rgba(53, 125, 82, .18); border-radius: 50%; transform: translateX(-50%); }
 .project-wave span { position: relative; display: block; height: 1px; background: linear-gradient(90deg, transparent, rgba(53, 125, 82, .55), transparent); transform: rotate(-4deg); }
@@ -198,8 +189,8 @@ footer p { margin: 0; color: #62786f; font-size: .82rem; line-height: 1.5; }
   .project-card { min-height: 355px; padding: 1.4rem; }
   .project-card h3 { right: 1.4rem; bottom: 5.4rem; left: 1.4rem; font-size: 2rem; }
   .project-card > p { right: 1.4rem; bottom: 1.4rem; left: 1.4rem; }
-  .project-orbit, .project-radar, .project-wave { top: 4.5rem; height: 170px; }
-  .project-radar { right: 4.5rem; left: 4.5rem; }
+  .project-media, .project-wave { top: 4.5rem; height: 170px; }
+  .project-app-icon img { width: 150px; height: 150px; }
   .coast-panel { min-height: 720px; margin: 0; }
   .coast-copy { padding: 2.4rem 1.6rem; }
   .coast-copy h1 { font-size: 3.15rem; }
