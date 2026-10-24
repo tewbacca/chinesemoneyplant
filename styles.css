@@ -78,24 +78,24 @@ h1, h2, h3 { font-family: var(--display); }
 .projects-heading h2 { margin: 0; }
 .projects-heading > p { max-width: 420px; margin: 0 0 .55rem auto; color: #567266; }
 .project-shelf { display: grid; grid-template-columns: repeat(4, 1fr); overflow: hidden; border: 1px solid rgba(7, 60, 42, .2); border-radius: 18px; background: var(--foam); box-shadow: 0 24px 70px rgba(7, 60, 42, .08); }
-.project-card { position: relative; min-height: 430px; overflow: hidden; padding: 2rem; border-right: 1px solid rgba(7, 60, 42, .16); }
+.project-card { position: relative; display: flex; flex-direction: column; min-height: 430px; overflow: hidden; padding: 2rem; border-right: 1px solid rgba(7, 60, 42, .16); }
 .project-card:last-child { border-right: 0; }
 .project-meta { position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .project-number { color: #6b8579; font-size: .7rem; font-weight: 600; letter-spacing: .16em; }
 .project-status { display: inline-flex; align-items: center; gap: .45rem; padding: .38rem .65rem; border: 1px solid rgba(7, 60, 42, .18); border-radius: 2rem; color: #45665a; background: rgba(255, 255, 255, .5); font-size: .65rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
 .project-status i { width: 6px; height: 6px; border-radius: 50%; background: var(--leaf); box-shadow: 0 0 0 3px rgba(88, 169, 111, .14); }
-.project-card h3 { position: absolute; z-index: 2; right: 2rem; bottom: 5.8rem; left: 2rem; margin: 0; font-size: clamp(1.65rem, 2.5vw, 2.55rem); font-weight: 600; line-height: 1.1; letter-spacing: -.055em; }
+.project-card h3 { margin: auto 0 .75rem; font-size: clamp(1.5rem, 1.9vw, 2.3rem); font-weight: 600; line-height: 1.1; letter-spacing: -.055em; }
 .project-card h3 a { display: flex; align-items: center; justify-content: space-between; text-decoration: none; }
 .project-card h3 a span { font-size: 1.2rem; transition: transform .25s; }
 .project-card h3 a:hover span { transform: translate(3px, -3px); }
-.project-card > p { position: absolute; z-index: 2; right: 2rem; bottom: 1.7rem; left: 2rem; margin: 0; color: #5b766a; font-size: .88rem; line-height: 1.5; }
-.project-media, .project-wave { position: absolute; top: 5.3rem; right: 1.5rem; left: 1.5rem; height: 205px; }
+.project-card > p { min-height: 4.5em; margin: 0; color: #5b766a; font-size: .88rem; line-height: 1.5; }
+.project-media, .project-wave { flex: none; height: 205px; margin: 1.5rem -.5rem 1.6rem; }
 .project-media { display: grid; place-items: center; overflow: hidden; }
 .project-media img { display: block; max-width: 100%; }
 .project-app-icon img { width: 180px; height: 180px; border-radius: 24%; filter: drop-shadow(0 15px 20px rgba(7, 60, 42, .13)); }
 .project-graph { border: 1px solid rgba(7, 60, 42, .2); border-radius: 10px; background: #0e151d; box-shadow: 0 14px 28px rgba(7, 27, 38, .13); }
 .project-graph img { width: 100%; height: 100%; object-fit: cover; }
-.project-wave { top: 6rem; display: grid; align-content: center; gap: 18px; }
+.project-wave { position: relative; margin-top: 2.2rem; display: grid; align-content: center; gap: 18px; }
 .project-wave::before { content: ""; position: absolute; top: 18px; left: 50%; width: 120px; height: 120px; border: 1px solid rgba(53, 125, 82, .18); border-radius: 50%; transform: translateX(-50%); }
 .project-wave span { position: relative; display: block; height: 1px; background: linear-gradient(90deg, transparent, rgba(53, 125, 82, .55), transparent); transform: rotate(-4deg); }
 .project-wave span:nth-child(2) { transform: rotate(5deg) scaleX(.85); }
@@ -149,6 +149,7 @@ footer p { margin: 0; color: #62786f; font-size: .82rem; line-height: 1.5; }
   .project-shelf { grid-template-columns: repeat(2, 1fr); }
   .project-card:nth-child(2n) { border-right: 0; }
   .project-card:nth-child(-n+2) { border-bottom: 1px solid rgba(7, 60, 42, .16); }
+  .project-card h3 { font-size: clamp(1.65rem, 3.4vw, 2.55rem); }
 }
 
 @media (max-width: 900px) {
@@ -193,9 +194,8 @@ footer p { margin: 0; color: #62786f; font-size: .82rem; line-height: 1.5; }
   .service-card { min-height: 280px; padding: 1.6rem 1rem; }
   .service-icon { right: 1rem; }
   .project-card { min-height: 355px; padding: 1.4rem; }
-  .project-card h3 { right: 1.4rem; bottom: 5.4rem; left: 1.4rem; font-size: 2rem; }
-  .project-card > p { right: 1.4rem; bottom: 1.4rem; left: 1.4rem; }
-  .project-media, .project-wave { top: 4.5rem; height: 170px; }
+  .project-card h3 { font-size: 2rem; }
+  .project-media, .project-wave { height: 170px; margin-top: 1.25rem; }
   .project-app-icon img { width: 150px; height: 150px; }
   .coast-panel { min-height: 720px; margin: 0; }
   .coast-copy { padding: 2.4rem 1.6rem; }
