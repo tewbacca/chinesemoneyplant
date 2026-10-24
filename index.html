@@ -50,11 +50,28 @@
             <div class="coast-sun"></div>
             <span class="bird bird-one"></span>
             <span class="bird bird-two"></span>
-            <svg viewBox="0 0 700 520" preserveAspectRatio="none">
-              <path class="land-far" d="M0 315c97-32 161-18 237 4 78 23 133-8 199-40 80-39 154-43 264-12v253H0Z"></path>
-              <path class="sea" d="M0 364c131-23 244 42 366 8 119-32 204-13 334 25v123H0Z"></path>
-              <path class="land-near" d="M0 409c98-40 172-27 260 5 92 34 182 40 258 13 67-24 122-17 182 5v88H0Z"></path>
-              <path class="shore" d="M0 406c105-31 184-10 264 19 95 35 169 36 257 7 75-25 120-17 179 5"></path>
+            <svg class="coast-scene" viewBox="0 0 1400 560" preserveAspectRatio="xMaxYMax slice">
+              <path class="land-far" d="M0 330C190 300 330 318 480 326C650 335 780 318 920 262C1070 202 1230 186 1400 222V560H0Z"></path>
+              <path class="sea" d="M0 412C230 386 430 418 650 424C850 430 990 392 1090 396C1180 400 1300 404 1400 400V560H0Z"></path>
+              <g class="swell">
+                <path d="M380 440C520 432 660 446 800 438"></path>
+                <path d="M250 456C430 447 610 462 790 453C860 450 920 452 980 448"></path>
+                <path d="M520 470C690 462 860 474 1040 464"></path>
+                <path d="M860 446C930 441 990 444 1050 440"></path>
+              </g>
+              <g class="curl">
+                <path class="curl-body" d="M1400 402C1340 390 1290 350 1250 316C1214 286 1160 276 1120 290C1080 304 1060 336 1068 366C1072 382 1082 392 1094 397L1106 397C1096 380 1098 360 1112 348C1128 334 1156 336 1170 356C1180 372 1182 390 1180 402Z"></path>
+                <path class="curl-face" d="M1106 397C1096 380 1098 360 1112 348C1128 334 1156 336 1170 356C1180 372 1182 390 1180 402L1100 402Z"></path>
+                <path class="curl-lip" d="M1272 336C1238 302 1198 282 1152 282C1110 284 1076 310 1070 346"></path>
+                <path class="curl-foam" d="M1182 388C1230 384 1290 392 1340 396"></path>
+                <circle class="spray" cx="1062" cy="318" r="4"></circle>
+                <circle class="spray" cx="1050" cy="336" r="3"></circle>
+                <circle class="spray" cx="1074" cy="300" r="2.5"></circle>
+                <circle class="spray" cx="1040" cy="316" r="2"></circle>
+              </g>
+              <path class="land-near" d="M0 472C200 442 360 456 520 492C700 530 880 522 1040 490C1180 462 1300 464 1400 482V560H0Z"></path>
+              <path class="shore" d="M0 469C205 438 365 452 524 489C704 526 880 518 1040 486C1180 458 1300 460 1400 478"></path>
+              
             </svg>
           </div>
         </div>
