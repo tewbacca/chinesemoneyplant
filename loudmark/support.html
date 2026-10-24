@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loudmark Support</title>
+<style>
+  :root { color-scheme: light dark; --accent: #E8590C; --text: #1d1d1f; --muted: #6e6e73; --bg: #fbfbfd; --card: #fff; --line: #e5e5ea; }
+  @media (prefers-color-scheme: dark) { :root { --text: #f5f5f7; --muted: #a1a1a6; --bg: #000; --card: #1c1c1e; --line: #38383a; --accent: #FF8A1E; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 34px; margin: 0 0 4px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  .lede { color: var(--muted); margin-bottom: 28px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Loudmark Support</h1>
+  <p class="lede">Quick sound level readings for iPhone, by tap or by Siri.</p>
+
+  <div class="card">
+    <strong>Contact</strong><br>
+    Questions, problems or ideas: email <a href="mailto:pileastudio@outlook.com">pileastudio@outlook.com</a>.
+    Please include your iPhone model and iOS version.
+  </div>
+
+  <h2>Taking a reading</h2>
+  <p>Open Loudmark, type a label (for example “Kitchen”) and tap <strong>Take Reading</strong>. It settles for a second, measures for ten seconds, then saves the result under that label.</p>
+  <p>With Siri, say <strong>“Hey Siri, Loudmark reading”</strong> and answer with a label. For a label you've used before, say <strong>“Hey Siri, Loudmark reading for Kitchen”</strong>. Siri tells you the result, and a Live Activity shows progress on the Lock Screen.</p>
+
+  <h2>Siri doesn't start a reading</h2>
+  <ul>
+    <li>Open Loudmark once and allow the microphone. Siri can't ask for microphone access itself.</li>
+    <li>A new label only works in one sentence after you've used it once; until then say “Loudmark reading” and give the label when asked.</li>
+    <li>Check Settings › Apps › Loudmark › Siri is allowed.</li>
+  </ul>
+
+  <h2>How accurate are the numbers?</h2>
+  <p>Readings are A-weighted like a sound level meter, but iPhone microphones vary, so treat them as approximate and comparative, not certified measurements. If you have a sound level meter, take a reading next to it and adjust <strong>Settings › Calibration offset</strong> until Loudmark's average matches.</p>
+  <p>Use the iPhone's own microphone: a reading taken through a Bluetooth or car hands-free microphone is marked with a warning, because those microphones filter out noise.</p>
+
+  <h2>What the numbers mean</h2>
+  <ul>
+    <li><strong>Average (LAeq)</strong>: the energy average over the reading, and the number to compare.</li>
+    <li><strong>Loudest / Quietest</strong>: the single loudest and quietest moments.</li>
+    <li><strong>Loud moments (L10)</strong>: exceeded 10% of the time.</li>
+    <li><strong>Background (L90)</strong>: exceeded 90% of the time; the steady noise underneath.</li>
+  </ul>
+
+  <h2>Syncing and deleting</h2>
+  <p>Readings stay on your iPhone unless you turn on <strong>Settings › Sync with iCloud</strong>, which uses your own private iCloud storage. Swipe left on a reading to delete it. To remove the iCloud copy, go to iOS Settings › your name › iCloud › Manage Storage.</p>
+
+  <h2>Privacy</h2>
+  <p>Audio is analysed live and never recorded. There are no accounts, ads or analytics. Read the full <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>© Pilea Studio. Loudmark is made in Torquay, Victoria.</footer>
+</main>
+</body>
+</html>
